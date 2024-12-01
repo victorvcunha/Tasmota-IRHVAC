@@ -47,7 +47,11 @@ set_turbo:
           options:
             - StoreOnly
             - SendStore
-
+    target_temp:
+      description: Sets Target Temperature in MQTT message. Default is 16.
+      example: 16
+      required: false
+            
 set_filters:
   description: Sets Filters mode.
   target:
