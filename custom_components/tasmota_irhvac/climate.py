@@ -978,12 +978,13 @@ class TasmotaIrhvac(RestoreEntity, ClimateEntity):
         self._state_mode = state_mode
         await self.async_send_cmd()
 
-    async def async_set_turbo(self, turbo, state_mode):
+    async def async_set_turbo(self, turbo, state_mode, target_temp):
         """Set new target turbo mode."""
         if turbo not in ON_OFF_LIST:
             return
         self._turbo = turbo.lower()
         self._state_mode = state_mode
+        self._attr_target_temperature = target_temp
         await self.async_send_cmd()
 
     async def async_set_quiet(self, quiet, state_mode):
