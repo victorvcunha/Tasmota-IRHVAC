@@ -18,7 +18,7 @@ HVAC_FAN_MAX = "max"
 # Some devices have "auto" and "fan_only" changed
 HVAC_MODE_AUTO_FAN = "auto_fan_only"
 
-# Some devicec have "fan_only" and "auto" changed
+# Some devices have "fan_only" and "auto" changed
 HVAC_MODE_FAN_AUTO = "fan_only_auto"
 
 # Some devices say max,but it is high, and auto which is max
